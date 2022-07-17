@@ -1,0 +1,40 @@
+import { FC } from 'react'
+import Link from 'next/link'
+import { XIcon } from '@heroicons/react/outline'
+import cn from "classnames"
+import { Button } from '@components/ui'
+import { useUI } from "@components/ui/context"
+import { NavLinks } from '@components/common'
+
+
+const MobileNav: FC = (onClose) => {
+  const {closeMobileNav} = useUI()
+
+  const rootClass = cn(
+    "bg-green text-purple h-full flex flex-col"
+  )
+
+  return (
+    <div className={rootClass}>
+        <header className="px-4 pt-6 pb-4 sm:px-6">
+            <div className="flex items-start justify-between space-x-3">
+                <div className="h-7 flex items-center">
+                    <button type="button" title="close cart"
+                        onClick={closeMobileNav}
+                        className="hover:opacity-50 text-purple transition ease-in-out duration-150"
+                    >
+                        <XIcon className="w-8 h-8" />
+                        
+                    </button>
+                </div>
+            </div>
+        </header>
+      
+        <div className="pt-4 px-4 sm:px-6 flex-1">
+           <NavLinks />
+        </div>
+    </div>
+  )
+}
+
+export default MobileNav

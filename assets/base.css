@@ -1,0 +1,11 @@
+:root {
+    
+    --green: #c4e24e;
+    --orange: #fa8947;
+    --purple: #4a2b4a;
+    --blue: #54a6d1;
+    --light-blue: #97d8fe;
+    --font-primary: 'Bungee';
+    --font-sans: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
+      'Helvetica', sans-serif;
+  }

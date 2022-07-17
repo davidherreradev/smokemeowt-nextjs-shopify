@@ -1,0 +1,41 @@
+.root {
+  @apply bg-purple font-mono text-[10px] cursor-pointer inline-flex px-10 rounded-sm leading-3 transition ease-in-out duration-150 shadow-sm font-semibold text-center justify-center uppercase py-4 border border-transparent items-center;
+  @apply h-12 w-12 bg-purple text-white rounded-full mr-3 inline-flex
+  items-center justify-center cursor-pointer transition duration-150 ease-in-out
+  p-0 shadow-none border-gray-200 border box-border;
+
+  & > span {
+    @apply absolute;
+  }
+
+  &:hover {
+    @apply transform scale-110 text-white border border-purple;
+  }
+
+  &:focus {
+    @apply outline-none;
+  }
+}
+
+.sm {
+  @apply h-6 text-[7px];
+}
+
+.color {
+  @apply text-black transition duration-150 ease-in-out;
+
+  &:hover {
+    @apply text-black;
+  }
+
+  &.dark,
+  &.dark:hover {
+    color: white !important;
+  }
+}
+
+.active {
+  &.size, &.color {
+    @apply border border-black bg-black;
+  }
+}

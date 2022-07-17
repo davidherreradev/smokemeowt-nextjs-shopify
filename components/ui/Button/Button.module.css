@@ -1,0 +1,32 @@
+.root {
+  @apply bg-purple text-white cursor-pointer inline-flex py-2 px-4 rounded-full text-xs tracking-wide leading-6  transition ease-in-out duration-150 shadow-sm font-semibold text-center justify-center uppercase border border-transparent items-center;
+}
+
+.root:hover {
+  @apply bg-purple opacity-90 text-white border border-purple;
+}
+
+.root:focus {
+  @apply outline-none;
+}
+
+.root[data-active] {
+  @apply bg-gray-600;
+}
+
+.loading {
+  @apply bg-green text-purple border-gray-200 cursor-not-allowed;
+}
+
+.slim {
+  @apply py-2 transform-none normal-case;
+}
+
+.disabled,
+.disabled:hover {
+  @apply text-neutral-600 border-gray-200 bg-gray-100 cursor-not-allowed;
+  filter: grayscale(1);
+  -webkit-transform: translateZ(0);
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+}

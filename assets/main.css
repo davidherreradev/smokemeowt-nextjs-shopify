@@ -1,0 +1,33 @@
+@import "./base.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* .fit {
+        min-height: calc(100vh - 88px)
+    } */
+}
+
+
+@layer base {
+    body, h1, h2, h3, h4, h5, h6, p {
+        font-family: 'Bungee', sans-serif;
+    }
+}
+
+@layer utilities {
+    .heading-text {
+        @apply text-purple text-3xl text-center md:text-left md:text-4xl lg:text-5xl mb-3;
+    }
+    .heading-tag {
+        @apply text-purple text-sm text-center md:text-left mb-7;
+    }
+    .button-primary {
+        @apply bg-purple hover:bg-purple text-white py-2 px-4 rounded-full text-xs tracking-wide;
+    }
+    .paragraph-text {
+        @apply font-mono
+    }
+}
