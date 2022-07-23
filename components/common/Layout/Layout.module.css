@@ -1,5 +1,5 @@
 
 
 .root {
-    @apply flex flex-col overflow-x-hidden bg-blue relative z-0 pt-36
+    @apply flex flex-col overflow-x-hidden bg-blue relative z-0 pt-40
 }

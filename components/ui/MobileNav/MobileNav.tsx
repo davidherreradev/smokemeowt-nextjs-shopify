@@ -11,7 +11,7 @@ const MobileNav: FC = (onClose) => {
   const {closeMobileNav} = useUI()
 
   const rootClass = cn(
-    "bg-green text-purple h-full flex flex-col"
+    "bg-green text-purple h-full flex flex-col min-w-[200px]"
   )
 
   return (

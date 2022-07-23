@@ -18,3 +18,5 @@ export { default as StoreLocator } from "./Storelocator"
 export { default as StoreNotice } from "./StoreNotice"
 
 export { default as LoadingDots } from "./LoadingDots"
+
+export { default as AgeGate } from "./AgeGate"

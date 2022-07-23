@@ -5,5 +5,5 @@
 }
 
 .item {
-    @apply text-xs text-purple hover:text-purple hover:opacity-50
+    @apply text-sm md:text-xs text-purple hover:text-purple hover:opacity-50
 }

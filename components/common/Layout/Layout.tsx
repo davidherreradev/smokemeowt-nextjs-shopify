@@ -1,4 +1,4 @@
-import { MobileSidebar, MobileNav, Sidebar, StoreNotice } from '@components/ui'
+import { MobileSidebar, MobileNav, Sidebar, StoreNotice, AgeGate } from '@components/ui'
 import { FC } from 'react'
 import { Navbar, Footer } from '@components/common'
 import s from "./Layout.module.css"
@@ -13,6 +13,7 @@ const Layout: FC = ({ children }: any) => {
 
   return (
     <ApiProvider>
+      <AgeGate />
       <Navbar />
       <MobileSidebar onClose={closeMobileNav} isOpen={isMobileNavOpen}>
         <MobileNav />

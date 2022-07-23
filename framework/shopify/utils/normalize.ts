@@ -7,7 +7,9 @@ import {
   Product as ShopifyProduct,
   ProductOption,
   ProductVariantConnection,
-  SelectedOption
+  SelectedOption,
+  ShopPolicy,
+  Shop
 } from "../schema"
 
 import { Product } from "@common/types/product"

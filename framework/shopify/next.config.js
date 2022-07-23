@@ -3,6 +3,6 @@
 
 module.exports = {
   images: {
-    domains: ["cdn.shopify.com"]
+    domains: ["cdn.shopify.com", 'media.graphassets.com']
   }
 }

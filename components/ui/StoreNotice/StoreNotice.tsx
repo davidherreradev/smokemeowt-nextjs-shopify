@@ -1,20 +1,40 @@
+import { request, gql } from 'graphql-request'
+import { useEffect, useState } from 'react'
 
-import React from "react"
+const graphqlAPI = "https://api-us-west-2.hygraph.com/v2/cl5vlw7ah09ye01t3dnim7ag6/master"
+      
 
 
-interface Message {
-    message: string
+export const getStoreNotice = async () => {
+  
+    const getStoreNoticeMessage = gql`
+    {
+      storeNotice(where: {id: "cl5vnvcvo7s360an3podd441z"}) {
+            id
+            showStoreNotice
+            storeNoticeMessage
+      }
+    }`
+  
+    const results = await request(graphqlAPI, getStoreNoticeMessage)
+
+    return results
+  
 }
 
+export default function StoreNotice() {
 
-const StoreNotice = ({message}: Message) => {
+    const [storeNotice, setstoreNotice] = useState('hidden')
+
+
+    useEffect(() => {
+        console.log(getStoreNotice())
+    }, [])
+
     return (
-        <>
-            <div className="bg-orange text-center text-[10px] py-2">
-                {message}
-            </div>
-        </>
+        <div className={storeNotice}> 
+            hi
+        </div>
     )
-}
 
-export default StoreNotice
+}

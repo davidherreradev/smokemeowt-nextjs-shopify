@@ -35,7 +35,7 @@ export default function Products({
   
   return (
       <> 
-        <div className="container mx-auto px-6 md:px-0">
+        <div className="container mx-auto px-4 md:px-12 mb-8">
           <h1 className="text-3xl text-left text-purple">Products</h1>
         </div>
         <Grid>

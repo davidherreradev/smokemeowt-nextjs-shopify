@@ -1,5 +1,5 @@
 .root {
-  @apply bg-purple text-white cursor-pointer inline-flex py-2 px-4 rounded-full text-xs tracking-wide leading-6  transition ease-in-out duration-150 shadow-sm font-semibold text-center justify-center uppercase border border-transparent items-center;
+  @apply bg-purple text-white cursor-pointer font-sans py-2 px-4 rounded-full text-xs tracking-wide leading-6  transition ease-in-out duration-150 shadow-sm font-semibold text-center justify-center uppercase border border-transparent items-center;
 }
 
 .root:hover {
