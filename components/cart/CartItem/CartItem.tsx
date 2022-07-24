@@ -65,7 +65,7 @@ const CartItem = ({
       <div className="flex-1 flex flex-col text-base">
         <Link href={`/`}>
           <span
-            className="font-bold text-lg cursor-pointer leading-6"
+            className="font-bold text-sm md:text-lg cursor-pointer leading-6"
             onClick={() => {}}
           >
             {item.name}
@@ -109,7 +109,7 @@ const CartItem = ({
           </button>
         </div>
       </div>
-      <div className="flex flex-col justify-between space-y-2 text-base">
+      <div className="flex flex-col text-xs justify-between space-y-2 text-base">
         <span>{price} {currencyCode}</span>
         <button
           title="Remove Product"

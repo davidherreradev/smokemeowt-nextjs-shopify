@@ -63,7 +63,7 @@ const CartSidebar: FC = () => {
               )}
           </ul>
         </div>
-        <div className="flex-shrink-0 px-4 -mt-5 sm:mt-0 pt-5 pb-12 sm:py-5 sm:px-6">
+        <div className="flex-shrink-0 px-4 -mt-5 sm:mt-0 pt-5 pb-20 sm:py-5 sm:px-6">
           <div className="border-t border-accents-3">
             <ul className="py-3">
             <li className="flex justify-between py-1">
