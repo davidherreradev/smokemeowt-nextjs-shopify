@@ -42,7 +42,7 @@ const AgeGate = () => {
         <div ref={ref} className={showAgeGate}>
             <div className="container h-screen mx-auto flex flex-col justify-center p-8 max-w-lg">
                 <div className="relative bg-green flex flex-col items-center rounded-lg shadow px-10 py-12">
-                    <div className="flex fill-purple w-48 md:w-72 mb-6">
+                    <div className="flex fill-purple w-48 h-24 md:w-72 mb-6">
                         <Logo />
                     </div>
                     <div className="flex rounded-t mb-6">

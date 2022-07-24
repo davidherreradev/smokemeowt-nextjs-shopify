@@ -116,8 +116,8 @@ const Home: NextPage & {Layout: FC}  = () => {
         
         {/* Support Cat Charities */}
         <section className="bg-orange relative">
-          <div  className="container mx-auto flex flex-col items-center md:p-12 gap-12 pt-1">
-            <div className="flex flex-col items-center md:items-start md:w-3/5">
+          <div  className="container mx-auto flex flex-col items-center md:p-12 gap-12 pt-12">
+            <div className="flex flex-col px-6 items-center md:items-start md:w-3/5">
               <h4 className="heading-text text-center">Support Cat Charities</h4>
               <p className="heading-tag text-center">Inspired by the amazing times I had getting stoned in my bedroom with my cat buddy, a portion of every purchase goes to cat charities. Join our discord community of other cool cats and vote for the charities you’d like us to donate to.</p>
               <Button Component={"a"} href="/stores">
