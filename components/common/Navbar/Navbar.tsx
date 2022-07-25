@@ -20,17 +20,17 @@ const Navbar: FC = ({storeNotice}: any) => {
 
       <div className=" mx-auto flex flex-row items-center justify-between px-4 py-4  gap-8 lg:container">
         {/* Mobile Nav Icon */}
-        <div className="h-10 w-10 z-30 cursor-pointer text-purple md:hidden">
+        <div className="h-10 w-10 z-30 cursor-pointer text-purple lg:hidden">
           <MenuIcon onClick={openMobileNav} />
         </div>
 
         {/* Nav Links */}
-        <div className="hidden text-purple md:flex md:flex-1">
+        <div className="hidden text-purple lg:flex lg:flex-1">
           <NavLinks />
         </div>
 
         {/* Brand / Logo */}
-        <div className="w-52 md:w-64 cursor-pointer flex-0 pt-2">
+        <div className="w-52 md:w-80 cursor-pointer flex-0 pt-2">
           <Link href="/">
             <a className="fill-purple"><Logo /></a>
           </Link>

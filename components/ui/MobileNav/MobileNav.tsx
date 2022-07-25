@@ -1,14 +1,23 @@
-import { FC } from 'react'
+import { FC, useState, useEffect } from 'react'
 import Link from 'next/link'
 import { XIcon } from '@heroicons/react/outline'
 import cn from "classnames"
 import { Button } from '@components/ui'
 import { useUI } from "@components/ui/context"
 import { NavLinks } from '@components/common'
+import { useRouter } from 'next/router'
 
 
 const MobileNav: FC = (onClose) => {
   const {closeMobileNav} = useUI()
+
+  const router = useRouter();
+  const [isOpen, setOpen] = useState(false);
+
+  useEffect(() => {
+    router.events.on("routeChangeStart", closeMobileNav);
+    return () => router.events.off("routeChangeStart", closeMobileNav);
+  }, [router.events]);
 
   const rootClass = cn(
     "bg-green text-purple h-full flex flex-col min-w-[200px]"

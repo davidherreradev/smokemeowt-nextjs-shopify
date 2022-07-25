@@ -8,9 +8,7 @@ const Stores: NextPage & {Layout: FC} = () => {
     
     return (
         <>
-            <div className="storerocket-store-locator h-[80vh] -mt-8"></div>
-            <Script src="//cdn.storerocket.io/widget.js" strategy='beforeInteractive'></Script>
-            <Script src="get-storelocator.js"></Script>
+            <StoreLocator />    
         </>
     )
 }

@@ -7,32 +7,30 @@ const NavLinks = (props: {className?: string}) => {
         <nav className={props.className}>
             <ul className={s.list}>
                 <li className={s.item}>
-                    <Link href="/">
+                    <Link href="/" passHref>
                         <a>
                             Home
                         </a>
                     </Link>
                 </li>
                 <li className={s.item}>
-                    <Link href="/weed">
+                    <Link href="/weed" passHref>
                         <a>
                             Weed
                         </a>
                     </Link>
                 </li>
                 <li className={s.item}>
-                    <Link href="/products">
+                    <Link href="/products" passHref>
                         <a>
                             Merch
                         </a>
                     </Link>
                 </li>
                 <li className={s.item}>
-                    <Link href="/stores">
-                        <a>
+                        <a href="/stores">
                             Find a Store
                         </a>
-                    </Link>
                 </li>
             </ul>
         </nav>

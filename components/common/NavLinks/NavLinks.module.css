@@ -1,9 +1,9 @@
 
 
 .list {
-    @apply flex flex-col space-y-2 md:flex-row md:space-x-6 md:space-y-0
+    @apply flex flex-col space-y-4 pt-4 md:pt-0 md:flex-row md:space-x-6 md:space-y-0
 }
 
 .item {
-    @apply text-sm md:text-xs text-purple hover:text-purple hover:opacity-50
+    @apply text-lg md:text-xs text-purple md:hover:text-green hover:scale-110
 }

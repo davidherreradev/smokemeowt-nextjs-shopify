@@ -52,12 +52,13 @@ const CartItem = ({
         'opacity-75 pointer-events-none': false
       })}
     >
-      <div className="w-16 h-16 bg-violet relative overflow-hidden cursor-pointer">
+      <div className="w-16 h-16 bg-purple relative overflow-hidden cursor-pointer">
         <Image
           onClick={() => {}}
           className={s.productImage}
-          width={150}
-          height={150}
+          width={60}
+          height={60}
+          layout={'responsive'}
           src={item.variant.image!.url}
           unoptimized
         />
@@ -74,18 +75,21 @@ const CartItem = ({
         <div className="flex p-1">
           { options && options.length > 0 &&
             (options.map((option) => {
-              const value = option.values[0]
-              return (
-                <Swatch
-                  key={`${item.id}-${option.displayName}`}
-                  size="sm"
-                  onClick={() => {}}
-                  label={value.label}
-                  color={value.hexColor}
-                  variant={option.displayName}
-                >
-                </Swatch>
-              )}
+                const value = option.values[0]
+                if(value.label != "Default Title") {
+                  return (
+                    <Swatch
+                      key={`${item.id}-${option.displayName}`}
+                      size="sm"
+                      onClick={() => {}}
+                      label={value.label}
+                      color={value.hexColor}
+                      variant={option.displayName}
+                    >
+                    </Swatch>
+                  )
+                }
+              }
             ))
           }
         </div>

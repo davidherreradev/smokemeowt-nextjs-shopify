@@ -43,6 +43,7 @@ export default function Products({
               <ProductCard key={product.id} product={product} />
           ))}
         </Grid>
+        <div className="p-8 md:p-12"></div>
         <Wave className="fill-green" />
       </>
   )
