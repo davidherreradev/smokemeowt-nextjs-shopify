@@ -14,7 +14,7 @@ const CartSidebar: FC = () => {
 
   
   const rootClass = cn(
-    "h-full flex flex-col pb-48 sm:pb-20 overflow-y-auto",
+    "h-full flex flex-col pb-48 sm:pb-20 overflow-y-scroll",
     {"": isEmpty}
   )
 
@@ -63,7 +63,7 @@ const CartSidebar: FC = () => {
               )}
           </ul>
         </div>
-        <div className="flex-shrink-0 px-4 sm:px-6">
+        <div className="flex-shrink-0 block h-auto px-4 sm:px-6">
           <div className="border-t border-accents-3">
             <ul className="py-3">
             <li className="flex justify-between py-1">
