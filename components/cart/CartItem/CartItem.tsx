@@ -113,7 +113,7 @@ const CartItem = ({
           </button>
         </div>
       </div>
-      <div className="flex flex-col text-xs justify-between space-y-2 text-base">
+      <div className="flex flex-col text-xs justify-between space-y-2">
         <span>{price} {currencyCode}</span>
         <button
           title="Remove Product"

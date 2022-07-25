@@ -14,7 +14,7 @@ const CartSidebar: FC = () => {
 
   
   const rootClass = cn(
-    "h-full flex flex-col pb-20 overflow-y-auto",
+    "h-full flex flex-col pb-48 sm:pb-20 overflow-y-auto",
     {"": isEmpty}
   )
 
