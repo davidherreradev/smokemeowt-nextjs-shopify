@@ -1,6 +1,7 @@
 
 .quantity {
   appearance: textfield;
+  -webkit-appearance: textfield;
   @apply w-8 border mx-3 rounded text-center text-sm text-black;
 }
 

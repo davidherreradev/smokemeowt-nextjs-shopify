@@ -48,7 +48,7 @@ const CartItem = ({
 
   return (
     <li
-      className={cn('flex flex-row space-x-8 py-8', {
+      className={cn('flex flex-row space-x-4 py-8', {
         'opacity-75 pointer-events-none': false
       })}
     >
@@ -66,7 +66,7 @@ const CartItem = ({
       <div className="flex-1 flex flex-col text-base">
         <Link href={`/`}>
           <span
-            className="font-bold text-sm md:text-lg cursor-pointer leading-6"
+            className="font-bold text-sm md:text-lg leading-none cursor-pointer mb-1"
             onClick={() => {}}
           >
             {item.name}

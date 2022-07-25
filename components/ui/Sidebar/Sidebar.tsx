@@ -32,20 +32,11 @@ const Sidebar: FC<Props> = ({ children, isOpen, onClose}) => {
   return (
     <>
       { isOpen ? (
-        <div ref={ref} className="fixed inset-0 h-full z-50">
-          <div className="absolute inset-0">
-            <div
-              onClick={onClose}
-              className="absolute inset-0 backdrop-blur-lg bg-black bg-opacity-80 transition-opacity"
-            />
-            <section className="absolute bottom-0 top-0 right-0 pl-10 max-w-full flex sm:pl-16 outline-none">
-              <div className="h-full md:w-screen md:max-w-md">
-                <div className="bg-blue h-full flex flex-col text-base bg-accents-1 shadow-xl overflow-y-auto">
-                  {children}
-                </div>
-              </div>
+        <div ref={ref} className="fixed inset-0 h-full z-50 overflow-y-auto">
+            <div onClick={onClose} className="fixed inset-0 backdrop-blur-lg bg-black bg-opacity-80 transition-opacity"/>
+            <section className="bg-blue absolute top-0 bottom-0 right-0 h-full max-w-xs md:max-w-sm flex flex-col text-base shadow-xl">
+              {children}
             </section>
-          </div>
         </div>
       ) : null }
     </>

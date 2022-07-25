@@ -14,12 +14,12 @@ const CartSidebar: FC = () => {
 
   
   const rootClass = cn(
-    "h-full flex flex-col pb-48 sm:pb-20 overflow-y-scroll",
+    "",
     {"": isEmpty}
   )
 
   return (
-    <div className={rootClass}>
+    <>
       <header className="px-4 pt-6 pb-4 sm:px-6">
         <div className="flex items-start justify-between space-x-3">
           <div className="h-7 flex items-center">
@@ -35,7 +35,7 @@ const CartSidebar: FC = () => {
       </header>
 
       {isEmpty ? (
-        <div className="flex-1 px-4 flex flex-col justify-center items-center text-purple">
+        <div className="h-full flex-1 px-4 flex flex-col justify-center items-center text-purple">
           <span className="border border-dashed border-primary rounded-full flex items-center justify-center w-16 h-16 p-12 bg-secondary text-secondary">
             <ShoppingCartIcon className="absolute h-12 w-12" />
           </span>
@@ -63,7 +63,7 @@ const CartSidebar: FC = () => {
               )}
           </ul>
         </div>
-        <div className="flex-shrink-0 block h-auto px-4 sm:px-6">
+        <div className="bg-blue flex-shrink-0 px-4 pb-4 sm:px-6">
           <div className="border-t border-accents-3">
             <ul className="py-3">
             <li className="flex justify-between py-1">
@@ -87,14 +87,14 @@ const CartSidebar: FC = () => {
           <Button
             Component="a"
             href="/api/checkout"
-            className="w-full"
+            className="w-full block"
           >
             Proceed to Checkout
           </Button>
         </div>
       </>
       }
-    </div>
+    </>
   )
 }
 
